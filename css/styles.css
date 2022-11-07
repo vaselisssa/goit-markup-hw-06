@@ -798,6 +798,8 @@ img {
    font-size: 12px;
    line-height: 1.17;
    letter-spacing: 0.01em;
+
+   position: relative;
 }
 
 .form-field input {
@@ -806,6 +808,18 @@ img {
 
    border: 1px solid rgba(33, 33, 33, 0.2);
    border-radius: 4px;
+}
+
+.form-icon {
+   top: 29px;
+   left: 12px;
+
+   position: absolute;
+}
+
+.form-icon > svg {
+   width: 18px;
+   height: 18px;
 }
 
 .form-field textarea {
@@ -827,6 +841,8 @@ img {
 }
 
 .form-agreement {
+   margin-bottom: 30px;
+
    display: flex;
    justify-content: center;
    align-items: center;
@@ -836,6 +852,8 @@ img {
 }
 
 .label-agreement {
+   margin-left: 23px;
+
    line-height: 1.71;
    color: var(--primary-text-color);
 }
@@ -843,6 +861,8 @@ img {
 .custom-checkbox {
    width: 16px;
    height: 15px;
+   margin-left: -23px;
+
    border: 2px solid var(--title-text-color);
    border-radius: 2px;
    background-color: transparent;
@@ -852,9 +872,10 @@ img {
 
 .checkbox-icon {
    position: absolute;
-   top: 50%;
+   /*    top: 50%;
    left: 50%;
    transform: translate(-50%, -50%);
+ */
    opacity: 0;
 }
 
@@ -864,6 +885,11 @@ img {
 
 .form-checkbox:checked + .custom-checkbox > svg {
    opacity: 1;
+}
+
+.link-agreement {
+   color: var(--accent-color);
+   border-bottom: 1px solid var(--accent-color);
 }
 
 .modal-form-button {
